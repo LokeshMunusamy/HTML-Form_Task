@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Covid-19</title>
+    <style>
+        #form{
+            
+            
+            padding: 20px;
+            margin: 15px;
+            
+        }
+
+        .space{
+            padding: 6px;
+            margin: 6px;
+            border-radius: 10px;
+
+        }
+
+        label{
+            width: 100px;
+            display: inline-block;
+            
+        }
+
+        button{
+            width: 300px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<form action="covid2.html">
+    <fieldset id="form">
+    <center>
+        <h1>Referral Form for COVID-19</h1>
+    </center>
+    <h2>Personal Details:</h2>
+    <label for="patient">Patient Name</label>
+
+    <div>
+        <label for="fname"> First Name:</label>
+        <input type="text" name="fname" id="fname" class="space" placeholder="Enter your First Name">
+    </div>
+    <div>
+        <label for="lname"> Last Name:</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" class="space" required>
+    </div>
+    <div>
+        <label for="age"> Age:</label>
+        <input type="number" name="age" id="age" placeholder="Enter your Age" class="space" required>
+    </div>
+    <div>
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" name="dob" id="dob" placeholder="Select your DOB" class="space" required>
+    </div>
+    <div id="gender">
+        <label for="male">Genter:</label>
+        <input type="radio" id="male" name="genter" value="male" required >
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="genter" value="female" required >
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="genter" value="others" required >
+        <label for="others">Others</label>            
+    </div>
+    <div>
+        <label>Patient in quarantine facility</label>
+        <input type="radio" name="gender" id="yes" class="space" required>
+        <label for="yes">Yes</label>
+        <input type="radio" name="gender" id="no" class="space" required>
+        <label for="no">No</label>    
+    </div>
+
+    <div>
+        <label for="blood_group">Blood Group:</label>
+        <select name="blood_group" id="blood_group" required class="space">
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="A+">B+</option>
+        <option value="A+">B-</option>
+        <option value="o+">o+</option>
+        <option value="o-">o-</option>
+        </select>
+    </div>
+    <div>
+        <label>Residing place:</label>
+    </div>
+    <div>
+        <input type="radio" name="living" id="city" required class="space">
+        <label for="city">City</label>
+        <input type="radio" name="living" id="village" required class="space">
+        <label for="village">Village</label>
+    </div>
+
+    <div>
+        <label></label>
+    </div>
+    <div>
+        <label for="district">District:</label>
+        <input type="text" name="district" id="district"  placeholder="Enter your District" required class="space">
+    </div>
+
+    <div>
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state"  placeholder="Enter your State" required class="space">
+    </div>
+    <div>
+        <label for="Nationality">Nationality:</label>
+        <input type="text" name="Nationality" id="Nationality" value=""class="space" placeholder="Enter your Nationality">
+
+    </div>
+    <div>
+        <label for="number">Phone Number:</label>
+        <input type="text" name="Phone Number" id="number" class="space" placeholder="Enter your Phone Number">
+
+    </div>
+    <div>
+        <label for="address">Patient Address:</label>
+        <textarea name="address" id="address" placeholder="please enter your address"></textarea class="space">
+    </div>
+
+    
+    <div>
+        <label for="pincode">Pincode:</label>
+        <input type="text" name="pincode" id="pincode" maxlength="6" placeholder="Enter your Pincode" required class="space" >
+    </div>
+    <div>
+        <label for="aadhar">Aadhar Number:</label>
+        <input type="text" name="aadhar" id="aadhar" maxlength="12" placeholder="Enter your Aadhar Number" required  class="space">
+    </div>
+    <div>    
+        <label for="aadharfile">Uplode Your Aadhar File:</label>
+        <input type="file" name="aadharfile" id="aadharfile" class="space">          
+    </div>
+    <div>    
+        <label for="passport">Passport Number:</label>
+        <input type="text" name="passport" id="passport" placeholder="Enter your Passport Number" class="space">          
+    </div>
+
+    <h2>Medical Information</h2>
+    <div>
+        <label for="symptoms">Symptoms:</label>
+    </div>
+
+            
+    <div>
+        <input type="checkbox" name="cough" id="cough" required class="space">
+        <label for="cough">Cough</label>
+        <input type="checkbox" name="vomiting" id="vomiting" required class="space">
+        <label for="vomiting">Vomiting</label>
+        <input type="checkbox" name="diarrhea" id="diarrhea" required class="space">
+        <label for="diarrhea">Diarrhea</label>
+        <input type="checkbox" name=" fever" id=" Fever" required class="space">
+        <label for=" Fever"> Fever</label>
+        <input type="checkbox" name="Abdominal_pain" id="Abdominal_pain" required class="space">
+        <label for="Abdominal_pain">Abdominal pain</label>
+        <input type="checkbox" name="Breathlessness" id="Breathlessness" required class="space">
+        <label for="Breathlessness">Diarrhea</label>       
+    </div>
+
+    <h2>Hospitalized:</h2>
+
+    <div>
+        <label>Hospitalized:</label>
+        
+        <input type="radio" name="hospital" id="yes" class="space">
+        <label for="yes">Yes</label>
+        <input type="radio" name="hospital " id="no" class="space">
+        <label for="no">No</label>
+    </div>
+
+    <div>
+        <label>Hospitalizetion:</label>
+        <input type="date" class="space">        
+    </div>
+    <div>
+        <label for="hname">Hospital Name:</label>
+        <input type="text" name="hname" id="hmane" placeholder="Enter The Hospital Name" class="space">
+    </div>
+    <div>
+        <label for="haddress">Hospital Address:</label>
+        <textarea name="hadderss" id="haddress" placeholder="Enter The Hospital Address" class="space"></textarea>
+    </div>
+
+    <h2>Hopital  Location</h2>
+
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2680694954206!2d80.2802035!3d13.082189699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5268aac940b7af%3A0x4f16c9713ed1fc29!2sGeneral%20Hospital%20Rd%2C%20Chennai%2C%20Tamil%20Nadu%20600003!5e0!3m2!1sen!2sin!4v1723634481086!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <h2>Referring To Doctor Details</h2>
+
+    <div>
+        <label for="doctorname">Doctor Name:</label>
+        <input type="text" name="doctorname" id="doctorname" placeholder="Enter the Doctor Name" class="space">
+    </div>
+
+    <div>
+        <label for="mobile">Doctor Mobile Number:</label>
+        <input type="number" name="mobile" id="mobile" class="space" placeholder="Enter your Phone Number">
+    </div>
+
+    <div>
+        <button>Submit</button>
+    </div>
+
+   
+       
+        </select>
+    </div>
+
+</fieldset>
+    
+</form>
+</body>
+</html>
